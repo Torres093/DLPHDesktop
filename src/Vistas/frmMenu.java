@@ -29,9 +29,9 @@ public class frmMenu extends javax.swing.JFrame {
         jToggleButton1 = new javax.swing.JToggleButton();
         jPanel3 = new javax.swing.JPanel();
         btnExpediente = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnHabitaciones = new javax.swing.JButton();
+        btnLista = new javax.swing.JButton();
+        btnInventario = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
 
         jToggleButton1.setText("jToggleButton1");
@@ -42,17 +42,23 @@ public class frmMenu extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(177, 178, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnExpediente.setText("jButton1");
-        jPanel3.add(btnExpediente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, -1, -1));
+        btnExpediente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Group 3.png"))); // NOI18N
+        jPanel3.add(btnExpediente, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 100, 80));
 
-        jButton2.setText("jButton2");
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, -1));
+        btnHabitaciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Group 4.png"))); // NOI18N
+        jPanel3.add(btnHabitaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 90, 70));
 
-        jButton3.setText("jButton3");
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, -1, -1));
+        btnLista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Group 5.png"))); // NOI18N
+        btnLista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListaActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnLista, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, 80, 70));
 
-        jButton4.setText("jButton4");
-        jPanel3.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, -1, -1));
+        btnInventario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Group 6.png"))); // NOI18N
+        btnInventario.setToolTipText("");
+        jPanel3.add(btnInventario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 80, 80));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setMinimumSize(new java.awt.Dimension(964, 750));
@@ -64,9 +70,9 @@ public class frmMenu extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 976, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -76,6 +82,10 @@ public class frmMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnListaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -114,9 +124,9 @@ public class frmMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnExpediente;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton btnHabitaciones;
+    public javax.swing.JButton btnInventario;
+    public javax.swing.JButton btnLista;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JToggleButton jToggleButton1;
