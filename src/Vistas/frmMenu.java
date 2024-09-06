@@ -28,7 +28,7 @@ public class frmMenu extends javax.swing.JFrame {
 
         jToggleButton1 = new javax.swing.JToggleButton();
         jPanel3 = new javax.swing.JPanel();
-        btn = new javax.swing.JButton();
+        btnExpediente = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -42,8 +42,8 @@ public class frmMenu extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(177, 178, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn.setText("jButton1");
-        jPanel3.add(btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, -1, -1));
+        btnExpediente.setText("jButton1");
+        jPanel3.add(btnExpediente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, -1, -1));
 
         jButton2.setText("jButton2");
         jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, -1));
@@ -113,7 +113,7 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btn;
+    public javax.swing.JButton btnExpediente;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
