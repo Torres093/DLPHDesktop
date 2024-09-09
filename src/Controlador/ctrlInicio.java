@@ -25,9 +25,15 @@ public class ctrlInicio implements MouseListener  {
             boolean set = Modelos.iniciarSesion();  
             if (set == true) {
                 JOptionPane.showMessageDialog(Vistas,"¡Bienvenido a DLPH!");
+                
+
             } else {
                 JOptionPane.showMessageDialog(Vistas, "Correo o contraseña incorrecta, intente nuevamente");
 
+            }
+                   if(e.getSource() == Vistas.btnIniciar){
+            Vistas.frmMenu.initbtnIniciar();
+            Vistas.dispose();
             }
        }
     }

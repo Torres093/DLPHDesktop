@@ -43,10 +43,10 @@ public class frmMenu extends javax.swing.JFrame {
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnExpediente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Group 3.png"))); // NOI18N
-        jPanel3.add(btnExpediente, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, 100, 80));
+        jPanel3.add(btnExpediente, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 80, 90));
 
         btnHabitaciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Group 4.png"))); // NOI18N
-        jPanel3.add(btnHabitaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 90, 70));
+        jPanel3.add(btnHabitaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 80, 80));
 
         btnLista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Group 5.png"))); // NOI18N
         btnLista.addActionListener(new java.awt.event.ActionListener() {
@@ -58,7 +58,7 @@ public class frmMenu extends javax.swing.JFrame {
 
         btnInventario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Group 6.png"))); // NOI18N
         btnInventario.setToolTipText("");
-        jPanel3.add(btnInventario, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 80, 80));
+        jPanel3.add(btnInventario, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 80, 80));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setMinimumSize(new java.awt.Dimension(964, 750));
@@ -127,7 +127,7 @@ public class frmMenu extends javax.swing.JFrame {
     private javax.swing.JButton btnHabitaciones;
     public javax.swing.JButton btnInventario;
     public javax.swing.JButton btnLista;
-    private javax.swing.JPanel jPanel1;
+    public javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
